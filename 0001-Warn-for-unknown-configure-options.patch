@@ -1,0 +1,26 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Patrick McCarty <patrick.mccarty@intel.com>
+Date: Fri, 27 Aug 2021 17:44:27 -0700
+Subject: [PATCH] Warn for unknown configure options
+
+Signed-off-by: Patrick McCarty <patrick.mccarty@intel.com>
+---
+ configure | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/configure b/configure
+index 3b96cde..46a219d 100755
+--- a/configure
++++ b/configure
+@@ -25,9 +25,9 @@ for opt do
+   --cxx=*) cxx="$optarg"
+   ;;
+   *)
+-    echo "ERROR: unknown option $opt"
++    echo "WARNING: unknown option $opt"
+     echo "Try '$0 --help' for more information"
+-    exit 1
++    continue
+   ;;
+   esac
+ done
