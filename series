@@ -1,2 +1,2 @@
 0001-Warn-for-unknown-configure-options.patch
-0002-examples-ucontext-cp.c-cope-with-variable-SIGSTKSZ.patch
+#0002-examples-ucontext-cp.c-cope-with-variable-SIGSTKSZ.patch
