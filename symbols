@@ -1,4 +1,5 @@
 liburing-ffi.so.2:LIBURING_2.4
+liburing-ffi.so.2:LIBURING_2.5
 liburing-ffi.so.2:__io_uring_buf_ring_cq_advance
 liburing-ffi.so.2:__io_uring_get_cqe
 liburing-ffi.so.2:__io_uring_sqring_wait
@@ -112,6 +113,7 @@ liburing-ffi.so.2:io_uring_prep_writev
 liburing-ffi.so.2:io_uring_prep_writev2
 liburing-ffi.so.2:io_uring_queue_exit
 liburing-ffi.so.2:io_uring_queue_init
+liburing-ffi.so.2:io_uring_queue_init_mem
 liburing-ffi.so.2:io_uring_queue_init_params
 liburing-ffi.so.2:io_uring_queue_mmap
 liburing-ffi.so.2:io_uring_recvmsg_cmsg_firsthdr
@@ -170,6 +172,7 @@ liburing.so.2:LIBURING_2.1
 liburing.so.2:LIBURING_2.2
 liburing.so.2:LIBURING_2.3
 liburing.so.2:LIBURING_2.4
+liburing.so.2:LIBURING_2.5
 liburing.so.2:__io_uring_get_cqe
 liburing.so.2:__io_uring_sqring_wait
 liburing.so.2:io_uring_check_version
@@ -190,6 +193,7 @@ liburing.so.2:io_uring_mlock_size_params
 liburing.so.2:io_uring_peek_batch_cqe
 liburing.so.2:io_uring_queue_exit
 liburing.so.2:io_uring_queue_init
+liburing.so.2:io_uring_queue_init_mem
 liburing.so.2:io_uring_queue_init_params
 liburing.so.2:io_uring_queue_mmap
 liburing.so.2:io_uring_register
