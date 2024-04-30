@@ -1,10 +1,12 @@
 liburing-ffi.so.2:LIBURING_2.4
 liburing-ffi.so.2:LIBURING_2.5
+liburing-ffi.so.2:LIBURING_2.6
 liburing-ffi.so.2:__io_uring_buf_ring_cq_advance
 liburing-ffi.so.2:__io_uring_get_cqe
 liburing-ffi.so.2:__io_uring_sqring_wait
 liburing-ffi.so.2:io_uring_buf_ring_add
 liburing-ffi.so.2:io_uring_buf_ring_advance
+liburing-ffi.so.2:io_uring_buf_ring_available
 liburing-ffi.so.2:io_uring_buf_ring_cq_advance
 liburing-ffi.so.2:io_uring_buf_ring_init
 liburing-ffi.so.2:io_uring_buf_ring_mask
@@ -41,14 +43,20 @@ liburing-ffi.so.2:io_uring_prep_cancel64
 liburing-ffi.so.2:io_uring_prep_cancel_fd
 liburing-ffi.so.2:io_uring_prep_close
 liburing-ffi.so.2:io_uring_prep_close_direct
+liburing-ffi.so.2:io_uring_prep_cmd_sock
 liburing-ffi.so.2:io_uring_prep_connect
 liburing-ffi.so.2:io_uring_prep_epoll_ctl
 liburing-ffi.so.2:io_uring_prep_fadvise
 liburing-ffi.so.2:io_uring_prep_fallocate
 liburing-ffi.so.2:io_uring_prep_fgetxattr
 liburing-ffi.so.2:io_uring_prep_files_update
+liburing-ffi.so.2:io_uring_prep_fixed_fd_install
 liburing-ffi.so.2:io_uring_prep_fsetxattr
 liburing-ffi.so.2:io_uring_prep_fsync
+liburing-ffi.so.2:io_uring_prep_ftruncate
+liburing-ffi.so.2:io_uring_prep_futex_wait
+liburing-ffi.so.2:io_uring_prep_futex_waitv
+liburing-ffi.so.2:io_uring_prep_futex_wake
 liburing-ffi.so.2:io_uring_prep_getxattr
 liburing-ffi.so.2:io_uring_prep_link
 liburing-ffi.so.2:io_uring_prep_link_timeout
@@ -74,6 +82,7 @@ liburing-ffi.so.2:io_uring_prep_poll_update
 liburing-ffi.so.2:io_uring_prep_provide_buffers
 liburing-ffi.so.2:io_uring_prep_read
 liburing-ffi.so.2:io_uring_prep_read_fixed
+liburing-ffi.so.2:io_uring_prep_read_multishot
 liburing-ffi.so.2:io_uring_prep_readv
 liburing-ffi.so.2:io_uring_prep_readv2
 liburing-ffi.so.2:io_uring_prep_recv
@@ -107,6 +116,7 @@ liburing-ffi.so.2:io_uring_prep_timeout_remove
 liburing-ffi.so.2:io_uring_prep_timeout_update
 liburing-ffi.so.2:io_uring_prep_unlink
 liburing-ffi.so.2:io_uring_prep_unlinkat
+liburing-ffi.so.2:io_uring_prep_waitid
 liburing-ffi.so.2:io_uring_prep_write
 liburing-ffi.so.2:io_uring_prep_write_fixed
 liburing-ffi.so.2:io_uring_prep_writev
@@ -138,6 +148,7 @@ liburing-ffi.so.2:io_uring_register_files_update
 liburing-ffi.so.2:io_uring_register_files_update_tag
 liburing-ffi.so.2:io_uring_register_iowq_aff
 liburing-ffi.so.2:io_uring_register_iowq_max_workers
+liburing-ffi.so.2:io_uring_register_napi
 liburing-ffi.so.2:io_uring_register_personality
 liburing-ffi.so.2:io_uring_register_probe
 liburing-ffi.so.2:io_uring_register_restrictions
@@ -161,6 +172,7 @@ liburing-ffi.so.2:io_uring_unregister_buffers
 liburing-ffi.so.2:io_uring_unregister_eventfd
 liburing-ffi.so.2:io_uring_unregister_files
 liburing-ffi.so.2:io_uring_unregister_iowq_aff
+liburing-ffi.so.2:io_uring_unregister_napi
 liburing-ffi.so.2:io_uring_unregister_personality
 liburing-ffi.so.2:io_uring_unregister_ring_fd
 liburing-ffi.so.2:io_uring_wait_cqe
@@ -173,8 +185,10 @@ liburing.so.2:LIBURING_2.2
 liburing.so.2:LIBURING_2.3
 liburing.so.2:LIBURING_2.4
 liburing.so.2:LIBURING_2.5
+liburing.so.2:LIBURING_2.6
 liburing.so.2:__io_uring_get_cqe
 liburing.so.2:__io_uring_sqring_wait
+liburing.so.2:io_uring_buf_ring_head
 liburing.so.2:io_uring_check_version
 liburing.so.2:io_uring_close_ring_fd
 liburing.so.2:io_uring_enable_rings
@@ -212,6 +226,7 @@ liburing.so.2:io_uring_register_files_update
 liburing.so.2:io_uring_register_files_update_tag
 liburing.so.2:io_uring_register_iowq_aff
 liburing.so.2:io_uring_register_iowq_max_workers
+liburing.so.2:io_uring_register_napi
 liburing.so.2:io_uring_register_personality
 liburing.so.2:io_uring_register_probe
 liburing.so.2:io_uring_register_restrictions
@@ -229,6 +244,7 @@ liburing.so.2:io_uring_unregister_buffers
 liburing.so.2:io_uring_unregister_eventfd
 liburing.so.2:io_uring_unregister_files
 liburing.so.2:io_uring_unregister_iowq_aff
+liburing.so.2:io_uring_unregister_napi
 liburing.so.2:io_uring_unregister_personality
 liburing.so.2:io_uring_unregister_ring_fd
 liburing.so.2:io_uring_wait_cqe_timeout
